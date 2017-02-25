@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+  </head>
+  <body>
+    <main>
+
+      <form id="form">
+        <fieldset>
+          <legend>Please Enter new locations!</legend>
+
+
+            <label for="Location">Location:</label>
+            <input type="text" name="Location" required>
+
+
+
+          <label for="Minimum Customers ">Minimum Customers :</label>
+          <input type="number" name="Minimum Customers " min="0" required>
+
+          <label for="Maximum Customers">Maximum Customers:</label>
+          <input type="number" name="Maximum Customers" min="0" required>
+
+          <label for="Average Cookie Sold per/hour">Average Cookie Sold per/hour:</label>
+          <input type="number" name="Average Cookie Sold per/hour" min="0" required>
+
+          <input type="submit" value="Add the item">
+        </fieldset>
+      </form>
+
+      <table id="table">
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Minimum Customers</th>
+              <th>Maximum Customers</th>
+              <th>Average Cookie Sold per/hour</th>
+            </tr>
+          </thead>
+
+          <tbody id="table-body">
+
+          </tbody>
+
+          <tfoot>
+
+          </tfoot>
+      </table>
+
+
+    </main>
+
+    <script type="text/javascript" src="lab8.js"></script>
+  </body>
+</html>

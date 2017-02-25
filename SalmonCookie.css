@@ -1,0 +1,183 @@
+html{
+
+}
+body{
+background-color: gray;
+width:960px;
+margin:0 auto;
+  }
+  #coffee{
+    position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .75;
+  }
+/*.container1{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: white;
+margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    align-items: center;
+    padding: 45px;
+    position:absolute;
+  z-index:2;
+
+}*/
+#container2{
+  background-color:#fff9fb;;
+  padding:5px;
+  margin: 5px;
+  width:950px;
+  height:600px;
+  position:absolute;
+  z-index:3;
+    border-radius: 25px;
+  opacity: 0.9;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+#nav{
+
+  position:absolute;
+  padding-left: 444.5px;
+  width: 929px;
+  height: 50px;
+  z-index: 4;
+  padding:10px;
+  margin: 10px;
+  font-family: 'VT323', monospace;
+  font-family: 'Vollkorn', serif;
+  color: #5D9997;
+
+}
+#nav ul{
+  padding-left: 444.5px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1.3em;
+  color: #723a3a;
+  background-color: #72d7da;
+margin-left: -15px;
+}
+
+li{
+  display: inline;
+  padding: 24px;
+}
+h1{
+  font-family: 'VT323', monospace;
+  font-family: 'Vollkorn', serif;
+  color: #FF759D;
+  align-items: center;
+
+
+
+}
+h2{
+  margin-top:59px;
+  font-size: x-large;
+font-family: Verdana;
+  color: #5D9997;
+  font-family: 'Vollkorn';
+      margin-left: 35px;
+}
+
+#story, #story2{
+  width: 391px;
+  margin: 25px;
+  font-family: 'Vollkorn';
+  color: gray;
+  position:absolute;
+  z-index:4;
+}
+#story2{
+  width: 391px;
+  margin-top: 250px;
+  font-family: 'Vollkorn';
+  color: gray;
+  position:absolute;
+  z-index:4;
+
+}
+p {
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bold;
+  max-width: 30%;
+  padding:20px
+  width: 391px;
+  margin-top: 235px;
+  font-family: 'Vollkorn';
+  color: gray;
+  position: absolute;
+  padding-left: 32px;
+
+}
+#cookies{
+
+  padding: 5px;
+margin-left: 474px;
+width: 399px;
+height: 249px;
+position: absolute;
+z-index: 5;
+border-radius: 25px;
+border-style: solid;
+margin-top: 225px;
+
+}
+#family{
+  padding: 5px;
+margin-left: 474px;
+width: 399px;
+height: 249px;
+position: absolute;
+z-index: 5;
+border-radius: 25px;
+    border-style: solid;
+
+}
+#footer{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  height: 5%;
+  width: 100%;
+  margin-top: 618px;
+  color: white;
+  font-weight: bold;
+}
+#salmon {
+  position: relative;
+  margin-top: 190px;
+  width: 10%;
+  height: 7%;
+  position: absolute;
+  z-index: 6;
+  margin-left: 14px;
+
+  }
+  #Shirt{
+    position: absolute;
+
+    margin-top: 124px;
+    margin-left: 50px;
+  }
+
+#container2 ul{
+position: absolute;
+  font-family: 'Vollkorn';
+  color: gray;
+      margin-top: 65px;
+}
+#container2 li{
+  margin-left: -24px;
+
+}

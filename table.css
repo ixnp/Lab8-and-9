@@ -1,0 +1,64 @@
+*{
+  font-family: 'VT323', monospace;
+  font-family: 'Vollkorn', serif;
+  color: #5D9997;
+}
+body{
+  background-image:url(coffee-beans.png);
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin:0 auto;
+
+}
+
+.container{
+  display:flex
+  flex-wrap;
+  flex-flow:column;
+  justify-content: center;
+  background-color: #fff9fb;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 10px;
+
+}
+.box{
+  height:200px;
+  min-width:100px;
+  flex: 0 0 100px;
+
+}
+.form{
+  height: 100px;
+}
+p{
+  width: 750px;
+  padding: 10px;
+}
+nav{
+  background: #72d7da;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+nav a{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
+nav li{
+  flex: 1 1 0;
+}
+
+.ugg{
+  hight:200;
+  width: 300;
+
+}
