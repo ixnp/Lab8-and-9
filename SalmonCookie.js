@@ -1,8 +1,5 @@
-// All Stores capacity is 60
-//pp= pike place location  //
-// table with location, time, cookies sold that hour and total per day
 
-// var allItems = [];
+var timeArr = ['10:00','11:00','12:00','1:00','2:00','3:00','4:00','5:00'];
 var PikePlace = new salmonCookieShop ('Pike Place',77,88, 5.2);
 var SeaTac =  new salmonCookieShop ('SeaTac', 6, 24, 1.2);
 var SouthCenter = new salmonCookieShop ('SouthCenter', 11, 38, 1.9);
@@ -12,50 +9,42 @@ var table = document.getElementById('shopTable');
 var tbody = document.getElementById('shopTable2');
 
 function salmonCookieShop(name, minimum, maximum, averageCookiesPerCustomer){
-  console.log('~~~~');
   this.name= name;
-  console.log('name',name);
   this.minimum = minimum;
-  console.log('minimum', minimum);
   this.maximum = maximum;
-  console.log('maximum', maximum);
   this.averageCookiesPerCustomer = averageCookiesPerCustomer;
-  console.log('averageCookiesPerCustomer',averageCookiesPerCustomer);
-  timeOfDay = ['10:00','11:00','12:00','1:00','2:00','3:00','4:00','5:00'];
-  console.log('timeOfDay',timeOfDay);
-
-  //sale of cookies per customer//
   this.salePerHour= [];
+  this.total = 0;
+  timeOfDay = [,'10:00','11:00','12:00','1:00','2:00','3:00','4:00','5:00','Total'];
 
 
-
-  //Random number of customers//
   this.customersPerHour = function(){
-    console.log('customersPerHour');
-    console.log('maximum, minimum',this.maximum, this.minimum );
     return (Math.random()*(this.maximum - this.minimum + 1 )) +  this.minimum;
   };
-  console.log('random customer per hour',this.customersPerHour());
-
-
-  //cookies per hour//
 
   this.cookiesPerHour = function (){
-    // console.log('TOD array length', timeOfDay.length);
-    // console.log('random customer per hour before loop',this.customersPerHour());
     for(var i=0; i < timeOfDay.length; i++){
-      // console.log('random customer per hour after loop',this.customersPerHour());
       var x = this.customersPerHour();
       var random = Math.round( x * this.averageCookiesPerCustomer);
       this.salePerHour.push(random);
+      this.total += random;
     };
 
-    // console.log(this.salePerHour);
-    // console.log(this.cookiesPerHour());
   };
   this.cookiesPerHour();
-  // console.log('salePerHour', this.cookiesPerHour());
+
+
   this.makeItemRow = function(){
+    var table = document.getElementById('shopTable');
+    var rowOne = document.createElement('tr');
+
+    table.appendChild(rowOne);
+    for(var i=0; i< timeOfDay.length; i++ ){
+      var timeCell = document.createElement('td');
+      timeCell.textContent = timeOfDay[i];
+      rowOne.appendChild(timeCell);
+    }
+
     var table = document.getElementById('shopTable');
     var row = document.createElement('tr');
     table.appendChild(row);
@@ -66,15 +55,13 @@ function salmonCookieShop(name, minimum, maximum, averageCookiesPerCustomer){
 
     for(var i=0; i< this.salePerHour.length; i++ ){
       var aveCell = document.createElement('td');
-      aveCell.textContent = this.salePerHour[i];
+      aveCell.textContent = this.salePerHour[i+1];
       row.appendChild(aveCell);
     }
   }
   this.makeItemRow();
 }
 
-////Lab 7 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^////////
-////Lab 8vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//////
 
 
 
